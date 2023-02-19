@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-RuijiApplication<ruiji>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "cn.hbmz.ruiji.RuijiApplication",
+            "projectName": "ruiji",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

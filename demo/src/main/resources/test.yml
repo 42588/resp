@@ -1,12 +1,12 @@
 person:
-    lastName: 王五
+    lastName: 王五${random.uuid}
     age: 18
     boss: false
     birth: 2001/01/09
     maps: {a1: 100,a2: 150}
     lists: [lisi,zhaoliu]
     dog:
-        name: 小狗
+        name: ${person.dog.age}_小狗
         age: 2
 lastName: 123
 # properties

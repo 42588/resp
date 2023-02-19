@@ -1,0 +1,9 @@
+logging:
+  level:
+    '[cn.hbmz.autoconfigtest]': trace
+  file:
+    path: ./spring
+spring:
+  output:
+    ansi:
+      enabled: always
