@@ -1,6 +1,3 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "automatic",
-    "java.project.sourcePaths": [],
-    "maven.view": "hierarchical"
+  "java.compile.nullAnalysis.mode": "automatic"
 }
