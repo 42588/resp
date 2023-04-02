@@ -23,6 +23,7 @@ public class R<T> {
         return r;
     }
 
+    /** 错误信息 */
     public static <T> R<T> error(String msg) {
         R r = new R();
         r.msg = msg;
