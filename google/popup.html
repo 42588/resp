@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Security-Policy"
+        content="script-src 'self' https://cdnjs.cloudflare.com;">
+    <title>提交数据到服务器</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="core-min.js"></script>
+    <script src="encoding.js"></script>
+
+
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+    <h1>提交数据到服务器</h1>
+    <form id="myForm">
+        <label for="username-input">用户名：</label>
+        <input type="text" id="username-input" name="username" required><br><br>
+        <label for="password-input">密码：</label>
+        <input type="password" id="password-input" name="password" required><br><br>
+        <label for="url-input">网址：</label>
+        <input type="text" id="url-input" name="url" required><br><br>
+        <button type="submit">提交数据</button>
+    </form>
+    <button id="goto-options">进入密码管理</button>
+    <div id="message"></div>
+
+    <div id="optionsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>密码管理</h2>
+            <div id="user-data"></div>
+        </div>
+    </div>
+</body>
+
+</html>

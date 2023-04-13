@@ -1,0 +1,101 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    font-size: 24px;
+}
+
+form {
+    padding: 20px;
+}
+
+label,
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4a90e2;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #2173c5;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#user-data {
+    margin-top: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+.edit,
+.delete,
+.copy {
+    margin-right: 10px;
+}
+
+.edit:hover,
+.delete:hover,
+.copy:hover {
+    background-color: #2173c5;
+}
